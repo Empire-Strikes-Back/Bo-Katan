@@ -1,0 +1,5 @@
+.shadow-cljs/
+.cpcache/
+.vscode/
+out/*.vsix
+# node_modules

@@ -1,0 +1,40 @@
+{
+	"name": "Bo-Katan",
+	"description": "i'm changing the terms of the deal - this is the way",
+	"version": "0.0.0",
+	"engines": {
+		"vscode": "^1.30.0"
+	},
+	"publisher": "Bo-Katan",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Empire-Strikes-Back/Bo-Katan.git"
+	},
+	"activationEvents": [
+		"onCommand:cmd-open"
+	],
+	"main": "./out/main.js",
+	"dependencies": {},
+	"devDependencies": {
+		"antd": "4.9.2",
+		"react": "17.0.1",
+		"react-dom": "17.0.1",
+		"vsce": "1.87.0",
+		"vscode": "1.1.37",
+		"ws": "8.5.0"
+	},
+	"contributes": {
+		"commands": [
+			{
+				"command": "cmd-open",
+				"title": "i open"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "cmd-open",
+				"key": "ctrl+alt+m ctrl+alt+o"
+			}
+		]
+	}
+}

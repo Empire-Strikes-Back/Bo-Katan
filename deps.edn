@@ -1,0 +1,28 @@
+{:paths ["src"]
+ :deps
+ {org.clojure/clojure {:mvn/version "1.10.3"}
+  org.clojure/clojurescript {:mvn/version "1.11.4"}
+  org.clojure/core.async {:mvn/version "1.5.648"}}
+
+ :aliases
+ {:main
+  {:extra-deps {}}
+
+  :ui-main
+  {:extra-deps {reagent/reagent {:mvn/version "1.0.0-rc1" :exclusions [cljsjs/react cljsjs/react-dom]}
+                metosin/reitit {:mvn/version "0.5.12"}
+                metosin/reitit-spec {:mvn/version "0.5.12"}
+                metosin/reitit-frontend {:mvn/version "0.5.12"}
+                ;; Just for pretty printting the match
+                fipp/fipp {:mvn/version "0.6.23"}}}
+
+  :dev
+  {:extra-deps {thheller/shadow-cljs {:mvn/version "2.17.8"
+                                      :exclusions [nrepl/nrepl
+                                                   cider/piggieback
+                                                   org.clojure/clojure
+                                                   org.clojure/clojurescript
+                                                   org.clojure/core.async]}
+                nrepl/nrepl {:mvn/version "0.6.0"}
+                cider/cider-nrepl {:mvn/version "0.24.0"}
+                cider/piggieback {:mvn/version "0.4.2"}}}}}
